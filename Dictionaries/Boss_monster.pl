@@ -180,6 +180,8 @@
     'The Penultimate Chimera',
     'The Antepenultimate Chimera',
     'Omar',
+    'GladOS',
+    "<Boss_monster>'s consciousness transplanted into a <Device_that_really_shouldnt_have_linux_on_it>",
     'Marlowe Stanfield',
     'Stringer Bell',
     'Avon Barksdale',
