@@ -1,4 +1,5 @@
-#!perl -w
+#!/usr/bin/env perl
+use warnings;
 no warnings 'recursion';
 
 BEGIN{
