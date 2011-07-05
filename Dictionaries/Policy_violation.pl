@@ -98,6 +98,7 @@
     'bring^ a <Weapon> to <Initech_affiliate>',
     'bring^ your pet <Monster> to <Initech_affiliate> and allow^ it to bark while someone is on a call',
     'grief^ game.pl',
+    'put^ <Relationship> in a corner',
     'speculate^ about the agenda of confidential meetings',
     'ask^ a coworker to review INT::<~^Cute_animal>::KillingWith<Weapon>',
     'keep^ pets in the third floor refrigerator at <Initech_affiliate>',
