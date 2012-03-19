@@ -35,6 +35,7 @@ GetOptions({ argv => \@ARGV },
     'was_successful=s' => \my $was_successful,
     'total_num_tests_executed=s' => \my $total_num_tests_executed,
     'test-string=s' => \my $test_string,
+    'interactive' => \my $interactive,
     'dictionary-path=s' => \my $dictionary_path,
     'quiet' => \my $quiet_mode,
     'lint' => \my $lint,
@@ -127,6 +128,14 @@ elsif ($test_string)
 {
     my $game = Game->new($dictionary_path, $quiet_mode);
     print $game->test_string($test_string) . "\n";
+}
+elsif ($interactive)
+{
+    my $game = Game->new($dictionary_path, $quiet_mode);
+    while ( ! eof(STDIN) ) {
+        defined( my $line = <STDIN> ) or die "readline failed: $!";
+        print STDOUT $game->test_string($line)
+    }
 }
 else {
     my $output = Game->new($dictionary_path, $quiet_mode)->play($was_successful, $total_num_tests_executed);
